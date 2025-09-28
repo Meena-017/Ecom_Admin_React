@@ -1,0 +1,42 @@
+/* Basic layout styles */
+.app-container {
+  min-height: calc(100vh - 120px); /* account for navbar + footer */
+}
+
+.sidebar {
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  min-height: calc(100vh - 56px); /* navbar height ~56 */
+}
+
+.sidebar-link {
+  padding: 10px 12px;
+}
+
+.content-col {
+  padding: 20px;
+}
+
+.auth-card {
+  max-width: 520px;
+  margin: 40px auto;
+}
+
+.mx-auto {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.footer {
+  border-top: 1px solid #e9ecef;
+}
+
+/* Make tables/card responsive on small screens */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none; /* mobile: hide sidebar (optional) */
+  }
+  .content-col {
+    padding: 12px;
+  }
+}
